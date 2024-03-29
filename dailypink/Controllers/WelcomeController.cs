@@ -25,7 +25,8 @@ namespace dailypink.Controllers
                                Description = product.Description,
                                ImageURL = product.ImageURL,
                                CategoryId = category.Id,
-                               CategoryName = category.Name
+                               CategoryName = category.Name,
+                               Price = product.Price
                            }).ToListAsync();
 
             return View(productsView);
